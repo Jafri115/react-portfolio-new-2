@@ -1,0 +1,117 @@
+.detailPage { padding-top: 120px; max-width: 900px; margin: 0 auto; }
+.projectDetailCard { margin-top: 2rem; }
+.mainImage {
+    width: 100%; height: 400px; object-fit: cover;
+    border-radius: 6px; margin-bottom: 2rem;
+}
+.descriptionBox {
+    background: rgba(88, 166, 255, 0.05); border: 1px solid rgba(88, 166, 255, 0.2);
+    border-radius: 8px; padding: 2rem; margin: 1.5rem 0 2.5rem 0;
+}
+.metaSection { margin: 2rem 0; }
+.techStack {
+    display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;
+}
+.infoBox {
+    padding: 1.2rem; border-radius: 6px;
+}
+.infoBox p { margin: 0; line-height: 1.7; font-size: 1.05rem; }
+.challengesBox { background: rgba(124, 58, 237, 0.08); border-left: 3px solid #7c3aed; }
+.resultsBox { background: rgba(88, 166, 255, 0.08); border-left: 3px solid #58a6ff; }
+.links {
+    display: flex; gap: 1rem; margin-top: 3rem; flex-wrap: wrap;
+    padding-top: 2rem; border-top: 1px solid #30363d;
+}
+
+.projectList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.projectCard:hover {
+  border-color: #58a6ff;
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.1);
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.featuredBadge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #f39c12;
+  color: #000;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+}
+
+.contentContainer {
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.contentContainer h3 {
+  margin-bottom: 10px;
+  color: #c9d1d9;
+}
+
+.contentContainer p {
+  color: #8b949e;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.techStack {
+  margin: 15px 0;
+}
+
+.techStack strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.cardFooter {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  color: #7d8590;
+  font-size: 0.9em;
+}
+
+.links .btn {
+  margin-left: 8px;
+  padding: 8px 12px;
+  font-size: 0.9em;
+}

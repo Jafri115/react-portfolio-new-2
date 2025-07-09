@@ -1,0 +1,59 @@
+.projectList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.projectCard {
+    display: flex;
+    padding: 0; /* Remove default padding for full control */
+    overflow: hidden; /* Ensure content respects border-radius */
+    min-height: 300px;
+}
+.imageContainer {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.featuredBadge {
+    position: absolute; top: 20px; right: 20px;
+    background: #dd6b20; color: white; padding: 0.3rem 0.8rem;
+    border-radius: 4px; font-size: 0.75rem; font-weight: 600;
+    display: inline-flex; align-items: center; gap: 5px;
+}
+.contentContainer {
+    flex: 1; padding: 25px; display: flex; flex-direction: column;
+}
+.contentContainer h3 { color: #E2E8F0; font-size: 1.3rem; }
+.contentContainer p { flex: 1; margin-bottom: 1rem; color: #A0AEC0; font-size: 0.95em; }
+.techStack { margin-bottom: 1rem; }
+.techStack strong { color: #63b3ed; font-size: 0.9rem; display: block; margin-bottom: 0.5rem; }
+.techStack div { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.cardFooter {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-top: auto; padding-top: 1rem; border-top: 1px solid #2D3748;
+}
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.date { color: #718096; font-size: 0.9em; }
+.links { display: flex; gap: 0.6rem; }
+.links a { font-size: 0.85rem; padding: 0.6rem 1.2rem; }
+.links a svg { font-size: 1.2em; }
+
+@media (max-width: 992px) {
+    .projectCard { flex-direction: column; }
+    .imageContainer { flex: 0 0 250px; } /* Fixed height for image on smaller screens */
+}

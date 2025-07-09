@@ -59,7 +59,7 @@ const HomePage: React.FC = () => {
                                     <h3 className={styles.projectTitle}>{project.title}</h3>
                                     <p className={styles.projectDescription}>{project.description.substring(0, 120)}...</p>
                                     <div className={styles.techStack}>
-                                        {project.tech_stack.split(',').slice(0, 4).map(tech => (
+                                        {project.tech_stack.split(',').slice(0, 4).map((tech: string) => (
                                             <span key={tech} className="skill-tag">{tech.trim()}</span>
                                         ))}
                                     </div>
