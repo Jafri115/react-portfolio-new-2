@@ -1,9 +1,9 @@
 // src/components/Card.tsx
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import styles from './Card.module.css';
 
-const cardVariants = {
+const cardVariants: Variants = {
   offscreen: { y: 20, opacity: 0 },
   onscreen: {
     y: 0,
