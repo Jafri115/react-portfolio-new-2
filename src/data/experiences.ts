@@ -12,4 +12,7 @@ export const experiences: Experience[] = [
     end_date: 'Oct 2024',
     current: false,
   },
+
+
   // ... and so on];
+

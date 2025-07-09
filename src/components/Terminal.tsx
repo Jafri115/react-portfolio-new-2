@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Terminal.module.css';
 
 const Terminal = () => {
@@ -37,5 +36,4 @@ const Terminal = () => {
     </div>
   );
 };
-
 export default Terminal;

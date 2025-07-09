@@ -1,13 +1,11 @@
-// src/components/TechStack.jsx
-import React from 'react';
 import Card from './Card';
 import styles from './TechStack.module.css';
 
-const techCategories = {
-    "Programming & Libraries": ["Python", "SQL", "Java", "TypeScript", "Pandas", "NumPy"],
-    "ML/DL & NLP": ["TensorFlow", "PyTorch", "Scikit-learn", "NLTK", "Transformers", "Hugging Face"],
-    "Data Engineering": ["PySpark", "Snowpark", "DBT", "Airflow", "PostgreSQL", "MLflow"],
-    "Web Development & Cloud": ["FastAPI", "Flask", "Django", "Docker", "AWS", "Azure"],
+const techCategories: Record<string, string[]> = {
+  'Programming & Libraries': ['Python', 'SQL', 'Java', 'TypeScript', 'Pandas', 'NumPy'],
+  'ML/DL & NLP': ['TensorFlow', 'PyTorch', 'Scikit-learn', 'NLTK', 'Transformers', 'Hugging Face'],
+  'Data Engineering': ['PySpark', 'Snowpark', 'DBT', 'Airflow', 'PostgreSQL', 'MLflow'],
+  'Web Development & Cloud': ['FastAPI', 'Flask', 'Django', 'Docker', 'AWS', 'Azure'],
 };
 
 const TechStack = () => {
@@ -29,5 +27,5 @@ const TechStack = () => {
         </section>
     );
 };
-
 export default TechStack;
+

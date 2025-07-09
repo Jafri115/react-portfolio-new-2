@@ -1,9 +1,13 @@
-// src/components/AnimatedCounter.jsx
-import React, { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
-const AnimatedCounter = ({ value, decimal = false }) => {
+interface AnimatedCounterProps {
+  value: number;
+  decimal?: boolean;
+}
+
+const AnimatedCounter = ({ value, decimal = false }: AnimatedCounterProps) => {
   const [count, setCount] = useState(0);
-  const ref = useRef(null);
+  const ref = useRef<HTMLSpanElement | null>(null);
 
   useEffect(() => {
     let start = 0;

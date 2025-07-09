@@ -52,5 +52,4 @@ MLflow is an open-source platform to manage the ML lifecycle, including experime
 
 By integrating MLflow into your workflow, you create a system that is not only organized and trackable but also far easier to move from research to production.
         `
-    }
-];
+    }];

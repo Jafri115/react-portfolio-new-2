@@ -37,5 +37,4 @@ export const ProjectsPage = () => {
         </div>
       </div>
     </>
-  );
-};
+  );};
