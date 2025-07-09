@@ -18,4 +18,7 @@ export const projects: Project[] = [
     challenges: '',
     results: ''
   },
+
+
   // ... and so on for all your projects];
+

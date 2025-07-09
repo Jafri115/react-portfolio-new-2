@@ -12,4 +12,7 @@ export const skills_categories: Record<string, string> = {
   programming: 'Programming Languages & Libraries',
   framework: 'Frameworks & Libraries',
   database: 'Data Engineering & Pipelines',
+
   tool: 'Web Development & Deployment',};
+
+
