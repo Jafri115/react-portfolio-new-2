@@ -1,13 +1,13 @@
 // src/components/Layout.tsx
-import React from 'react';
+import type { ReactNode } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 
 interface LayoutProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout = ({ children }: LayoutProps) => {
     return (
         <>
             <Header />
@@ -18,5 +18,4 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         </>
     );
 };
-
 export default Layout;
