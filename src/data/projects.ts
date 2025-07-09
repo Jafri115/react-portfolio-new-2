@@ -1,5 +1,5 @@
 // src/data/projects.ts
-import type { Project } from './types';
+import type { Project } from '../types';
 
 export const projects: Project[] = [
   // ... Paste the content of your projects.js file here
@@ -18,5 +18,4 @@ export const projects: Project[] = [
     challenges: '',
     results: ''
   },
-  // ... and so on for all your projects
-];
+  // ... and so on for all your projects];

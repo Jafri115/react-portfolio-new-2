@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
-import type { projects } from '../types';
+import type { Project } from '../types';
+import { projects } from '../data/content';
 import { Github, ExternalLink } from 'lucide-react';
 
 export const ProjectsPage = () => {
