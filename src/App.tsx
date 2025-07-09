@@ -1,6 +1,6 @@
 // src/App.tsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
@@ -21,7 +21,7 @@ const ScrollToTop = () => {
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <>
       <ScrollToTop />
       <Layout>
         <Routes>
@@ -34,8 +34,7 @@ const App: React.FC = () => {
           {/* <Route path="/blog/:slug" element={<BlogDetailPage />} /> */}
         </Routes>
       </Layout>
-    </Router>
+    </>
   );
 };
-
 export default App;
