@@ -1,0 +1,46 @@
+.terminalWindow {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+    max-width: none;
+}
+
+.terminalHeader {
+    background: #21262d;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.title {
+    margin-left: 10px;
+    font-size: 0.8em;
+}
+.terminalDot { width: 12px; height: 12px; border-radius: 50%; }
+.dot-red { background: #ff5f56; }
+.dot-yellow { background: #ffbd2e; }
+.dot-green { background: #27ca3f; }
+
+.terminalContent {
+    padding: 25px;
+    font-family: 'Monaco', 'Menlo', monospace;
+    font-size: 1.1em;
+}
+
+.terminalLine { margin: 5px 0; }
+.prompt { color: #7c3aed; font-weight: bold; margin-right: 8px; }
+.command { color: #58a6ff; }
+.output { color: #c9d1d9; }
+
+.typing {
+    display: inline-block;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}

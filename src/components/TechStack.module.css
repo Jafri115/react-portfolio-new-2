@@ -1,0 +1,32 @@
+/* src/components/TechStack.module.css */
+.techSection {
+    margin: 80px 0;
+}
+
+.techGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+}
+
+.categoryTitle {
+    font-size: 1.4em;
+    margin-bottom: 25px;
+    color: #c9d1d9;
+}
+
+.tagContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Re-using the global .skill-tag style from global.css */
+
+@media (max-width: 768px) {
+    .techGrid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
