@@ -56,5 +56,4 @@ export const skills: SkillCategory[] = [
   {
     title: 'Tools & DevOps',
     skills: ['Git', 'CI/CD', 'MLflow', 'Tableau', 'Gradio'],
-  },
-];
+  },];

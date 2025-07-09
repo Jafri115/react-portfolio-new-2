@@ -1,5 +1,5 @@
 // src/data/experiences.ts
-import type { Experience } from './types';
+import type { Experience } from '../types';
 
 export const experiences: Experience[] = [
   // ... Paste the content of your experiences.js file here
@@ -12,5 +12,4 @@ export const experiences: Experience[] = [
     end_date: 'Oct 2024',
     current: false,
   },
-  // ... and so on
-];
+  // ... and so on];
